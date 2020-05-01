@@ -1,0 +1,151 @@
+---
+title: '1051H (S61): Lecture #01'
+author: "Wesley Burr"
+date: "01/05/2020"
+output:
+  ioslides_presentation:
+    css: ../style.css
+    fig_caption: yes
+    font-family: Lato Semibold
+    font-import: http://fonts.googleapis.com/css?family=Lato
+    widescreen: yes
+  beamer_presentation: default
+---
+
+# Welcome Information
+
+## Contact Details
+
+* **Me**: Dr. Wesley Burr
+* **Email**: wesleyburr@trentu.ca (only for important, personal issues!)
+* **Office**: GCS 335 (not that this matters ...)
+* **Student Hours**: Fridays, 1300-1500 (1:00 - 3:00pm)
+
+## Digital Tech & Links
+
+I believe in the power of technology to make teaching and learning easier. So we're going
+to use quite a bit of it in this class. 
+
+* **Blackboard**: official grades, class-wide communications, paper assignment postings 
+* **WeBWorK**: assignments (digital)
+* **Chat ('Slack')**: asking questions, communicating, sharing, talking to the TAs and me
+* **rstudio.cloud**: learning to **do** statistics and data analysis (3 assignments)
+* **Slides and Videos**: Blackboard
+
+## WeBWorK
+
+* Linked from Blackboard
+* Posted demo in the Extra Videos
+* First assignment already live
+* Multiple attempts (**varies** by question)
+* **For the first assignment**, infinite attempts: figure out how to use the system!
+* Assignments due throughout S61 term (10 in total)
+
+## Chat Interface
+
+* persistant
+* multiple user
+* replaces email
+* where the TAs and professors will spend time outside of class & office hours
+* click the invite link in the Announcement on Blackboard
+
+## RStudio
+
+The **R** programming language and interface is **the** language of statistics in the 21st century. 
+
+* MATH 1051H is not a traditional mathematics course
+* Statistics blends mathematics, computer science, data analysis, data science, and philosophy
+* You will be learning to do **data analysis** using **R** in this class
+* click the invite link in the Announcement on Blackboard, login with Google, then bookmark the page
+
+## Course Overview
+
+Now I'd like to go over the course with you.
+
+## Posted Material
+
+* lectures: about 2 hours per week, multiple videos, by topic
+* workshops: two topics per week, 2+ videos, organized sequentially
+* problem solving: at least one video per week
+* extra topics: as often as needed
+
+## Texts & Software
+
+* OpenIntro Statistics (4th edition: free PDF, or order on Amazon ... if they'll ship!)
+* Book of R: excellent reference for shelf, not required (about $50, digital copies available on Google Play Books)
+* Calculator: anything goes, Casio FX-991 recommended
+* R & RStudio: free! cloud!
+
+## The Textbook
+
+The textbook we are using is an open-source CC-BY statistics textbook written by some
+excellent folks. The PDF is completely free if you want it, and I encourage all of you
+to at least get a copy of the **4th Edition**.
+
+**There is a link to the 4th Edition on Blackboard**.
+
+## Extra Textbook
+
+In addition, there is a book on the use of R and R programming available in the bookstore (and
+digitally on Google Play Books, and elsewhere). It's a 
+really, really good reference text for the future - most of you will end up using R in a later
+course (especially you BIOL and FRSC folks), and this is the kind of book you keep on your shelf
+for later. It's about \$55 for a dead tree version, or you can save \$20 and get an electronic copy
+from Amazon.
+
+Links:
+
+* [Book of R, paper, Amazon](https://www.amazon.ca/Book-First-Course-Programming-Statistics/dp/1593276516/)
+* [Book of R, Kindle edition, Amazon](https://www.amazon.ca/Book-First-Course-Programming-Statistics-ebook/dp/B01J92NR22/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)
+* [Book of R, paper, Trent Bookstore](https://www.bkstr.com/trentstore/product/book-of-r-686977-1)
+
+Cheapest price seems to be the Amazon prices. I don't recommend renting the book - if you're going to bother
+having it at all, buy it and mark it up. Save it for the future. It's a really solid reference.
+
+## Things Worth Marks
+
+* WeBWork2: 40%
+* R Assignments: 3, 10% each (weeks 3, 5, 6, tentatively) - first one posted next week!
+* Theory Written: 10% (week 6)
+* Final Exam: 20%
+
+## WeBWorK (40%)
+
+WeBWorK is an open-source homework system with automatically graded problems. It allows for
+some fun things like multiple attempts, and in-response math (e.g., you can say 
+"My Answer is [ 2 * 2 + 2 ]" and it will recognize it).
+
+* WeBWorK assignments will all be posted for as long as I can
+* you can work ahead a bit!
+* all assignments are theoretically doable with only the textbook as a resource,
+but realistically will be helped by having the lectures and workshop material handy
+
+## R Assignments (30%, 3x10%)
+
+The R assignments are designed to assess your learning of the material covered mostly
+in the workshops, and demonstrated in class. The first will be a simple syntax check,
+seeing if you've learned how to create documents and use basic features.
+
+The second will be a probability-based assignment, asking you to **do** computations.
+
+And finally, the third will be a data analysis **report**, with multiple "pathways" (options)
+for your data set. Professors from Forensics, Biology, and Chemistry have donated data
+sets to us for use on this assignment, and this third report will be like a lab report
+for one of your science courses: just done in R!
+
+## Written Assignment (10%)
+
+You'll notice that there is no real written work due through the term, excepting the R assignments.
+We've found that in past years, students don't seem to really learn how to do the problems
+"by hand" (using a pencil, not a computer), and thus struggle on the final exam.
+
+The written assignment is essentially designed as examination review and preparation: if you do
+well on the written assignment, you should be prepared for the computational and written parts
+of the final exam. Even if the final isn't the same as usual ... 
+
+## How to Get Help
+
+* Chat: anytime!
+* TA synchronous Zoom time: TBD
+* My Student Hours: Friday, 1:00-3:00pm, in my personal Zoom chat (link on Blackboard and in Slack pins)
+* read the (free!) textbook
