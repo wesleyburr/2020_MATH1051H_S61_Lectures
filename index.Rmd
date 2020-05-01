@@ -51,3 +51,11 @@ class: inverse
 <a href="./Lecture01/lecture01.pdf">PDF</a>;
 <a href="./Lecture01/lecture01.pptx">PPTX</a> (hideous)
 
+<br />
+
+**Lecture 02 - Chapter 1**
+
+<a href="./Lecture02/lecture02.html">HTML</a>; 
+<a href="./Lecture02/lecture02.pdf">PDF</a>;
+<a href="./Lecture02/lecture02.pptx">PPTX</a> (hideous)
+
