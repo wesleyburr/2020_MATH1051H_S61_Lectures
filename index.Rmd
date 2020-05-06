@@ -42,7 +42,6 @@ for some reason
 
 class: inverse
 
-
 ## Week 01
 
 **Lecture 01 - Introduction**
@@ -58,4 +57,12 @@ class: inverse
 <a href="./Lecture02/lecture02.html">HTML</a>; 
 <a href="./Lecture02/lecture02.pdf">PDF</a>;
 <a href="./Lecture02/lecture02.pptx">PPTX</a> (hideous)
+
+<br />
+
+**Lecture 03 - Chapter 2**
+
+<a href="./Lecture03/lecture03.html">HTML</a>; 
+<a href="./Lecture03/lecture03.pdf">PDF</a>;
+<a href="./Lecture03/lecture03.pptx">PPTX</a> (hideous)
 
