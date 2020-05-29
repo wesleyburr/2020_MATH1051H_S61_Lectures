@@ -81,6 +81,7 @@ class: inverse
 <br />
 
 **Lecture 05 - Chapter 3**
+
 <a href="./Lecture05/lecture05.html">HTML</a>; 
 <a href="./Lecture05/lecture05.pdf">PDF</a>;
 <a href="./Lecture05/lecture05.pptx">PPTX</a> (hideous)
@@ -92,10 +93,10 @@ class: inverse
 ## Week 03
 
 **Lecture 06 - Chapter 4**
+
 <a href="./Lecture06/lecture06.html">HTML</a>; 
 <a href="./Lecture06/lecture06.pdf">PDF</a>;
 <a href="./Lecture06/lecture06.pptx">PPTX</a> (hideous)
-
 
 ---
 
@@ -104,8 +105,17 @@ class: inverse
 ## Week 04 
 
 **Lecture 07 - Chapter 8**
+
 <a href="./Lecture07/lecture07.html">HTML</a>; 
 <a href="./Lecture07/lecture07.pdf">PDF</a>;
 <a href="./Lecture07/lecture07.pptx">PPTX</a> (hideous)
+
+<br />
+
+**Lecture 08 - Chapter 5.1, 7.1**
+
+<a href="./Lecture08/lecture08.html">HTML</a>; 
+<a href="./Lecture08/lecture08.pdf">PDF</a>;
+<a href="./Lecture08/lecture08.pptx">PPTX</a> (hideous)
 
 
