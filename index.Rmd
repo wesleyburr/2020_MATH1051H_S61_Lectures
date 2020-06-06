@@ -140,3 +140,25 @@ class: inverse
 
 <br />
 
+
+---
+
+class: inverse
+
+## Week 06
+
+**Lecture 11 - Chapter 6.1**
+
+<a href="./Lecture11/lecture11.html">HTML</a>; 
+<a href="./Lecture11/lecture11.pdf">PDF</a>;
+<a href="./Lecture11/lecture11.pptx">PPTX</a> (hideous)
+
+<br />
+
+**Lecture 12 - Chapters 5.2, 6.1, 7.1**
+
+<a href="./Lecture12/lecture12.html">HTML</a>; 
+<a href="./Lecture12/lecture12.pdf">PDF</a>;
+<a href="./Lecture12/lecture12.pptx">PPTX</a> (hideous)
+
+<br />
