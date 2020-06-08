@@ -1,0 +1,201 @@
+---
+title: 'MATH 1051H S61 - Lecture 13'
+output:
+   ioslides_presentation:
+     font-family: Lato Semibold
+     font-import: http://fonts.googleapis.com/css?family=Lato
+     widescreen: yes
+     css: ../style.css
+     fig_caption: yes
+---
+<style>
+citation {
+  font-size: 4px;
+}
+</style>
+
+# Confidence Intervals for t Cases
+
+## Context
+
+**Confidence interval, a general formula**
+
+$$
+\text{point estimate} \pm z^\star \cdot SE
+$$
+
+Conditions when the point estimate = $\bar{x}$:
+
+* **Independence:** Observations in the sample must be independent
+    - random sample/assignment
+    -  if sampling without replacement, $n <$ 10% of population
+* **Sample size / skew:** $n \ge 30$ and population distribution should not be extremely skewed
+
+**Note:** We will discuss working with samples where $n < 30$ **now**.
+
+## Confidence Intervals, $n < 30$
+
+When we were doing hypothesis tests, and had small samples, do you
+remember what we did? We said that the issue was the SE ... and then
+we used a t!
+
+That's all we do here. If $n<30$ and you don't know $\sigma$, you use
+a $t$ distribution for your confidence interval.
+
+But basically nothing changes ... instead of using $z^\star$, you use
+$t^\star$ instead. That's it.
+
+Let's just solve a couple of problems, and see how it works.
+
+## Problem 1: Highway Speeds
+
+Southbound traffic on the I-280 highway near Cupertino, California
+had its speed monitored at 3:30pm on a Wednesday. The sample of 12
+cars had mean 97.6 km/hr with standard deviation 6.56 km/hr. Test
+the highway patrol's claim that the average speed on this highway
+at this time of day is lower than the speed limit of 105 km/hr.
+
+Also compute a 99\% confidence interval for the mean speed.
+
+## Problem 1: Information
+
+What do we have from this problem?
+
+* $n=12$
+* $\bar{x} = 97.6$
+* $s = 6.56$
+* $H_A: \mu < 105$
+* $\alpha = 0.01$ (confidence: 99\%)
+
+## Problem 1: Statistic
+
+We're doing a hypothesis test:
+$$
+H_0: \mu = 105 \qquad \text{versus} \qquad H_A: \mu < 105.
+$$
+
+Compute the test statistic:
+
+$$
+t_\text{test} = \frac{\bar{x} - \mu_0}{SE_{\bar{x}}}
+= \frac{97.6 - 105}{\frac{6.56}{\sqrt{12}}} = -3.907676
+$$
+
+## Problem 1: ME
+
+When computing a confidence interval, we use the formula
+$$
+\text{point estimate} \pm t^\star \cdot \text{SE}
+$$
+where we use $t^\star$ instead of $z^\star$ because $n < 30$. Thus,
+
+$$
+\text{ME} = t^\star \cdot \text{SE} = t^\star \cdot 1.893709
+$$
+```{r}
+qt(p = 0.99 + 0.01/2, df = 12 - 1, lower.tail = TRUE)
+```
+
+$$
+\text{ME} = 3.1058 \cdot 1.8937 = 5.8815.
+$$
+
+## Problem 1: Conclusion (Test)
+
+We found a test statistic of -3.9077, so the p-value is (since the alternative
+is $\mu < 105$):
+```{r}
+pt(-3.9077, df = 12 - 1, lower.tail = TRUE)
+```
+and we reject the null, and conclude that the average speed **is** less than
+105 km/hr.
+
+## Problem 1: Conclusion (CI)
+
+Similarly, we can form the 99\% confidence interval, which is
+$$
+97.6 \pm \text{ME} = 97.6 \pm 5.8815
+$$
+which is
+```{r}
+97.6 + c(-1, 1) * 5.8815
+```
+and thus the 99\% confidence interval for the true mean speed is (91.7, 103.5) km/hr.
+
+## Problem 2: Pennies
+
+Before 1983, US pennies were made with 97\% copper and 3\% zinc.
+After 1983, they were converted to 3\% copper and 97\% zinc to make
+them cheaper to manufacture. A simple random sample of 25
+post-1983 pennies had an average weight of 2.49910g, with standard
+deviation 0.01648g. The US Mint specifies that post-1983 pennies should be manufactured
+with mean weight 2.500g. At a 95\% level, do you believe that pennies
+are actually being manufactured with mean weight of 2.500g?
+
+Compute a 93\% confidence interval for the mean weight of post-1983 pennies.
+
+## Problem 2: Information
+
+What do we have from this problem?
+
+* $n=25$
+* $\bar{x} = 2.49910$
+* $s = 0.01648$
+* $H_A: \mu \neq 2.500$
+* $\alpha = 0.07$ (confidence: 93\%)
+
+## Problem 2: Statistic
+
+We're doing a hypothesis test:
+$$
+H_0: \mu = 2.500 \qquad \text{versus} \qquad H_A: \mu \neq 2.500.
+$$
+
+Compute the test statistic:
+
+$$
+t_\text{test} = \frac{\bar{x} - \mu_0}{SE_{\bar{x}}}
+= \frac{2.49910 - 2.500}{\frac{0.01648}{\sqrt{25}}} = -0.2730583
+$$
+
+## Problem 2: ME
+
+When computing a confidence interval, we use the formula
+$$
+\text{point estimate} \pm t^\star \cdot \text{SE}
+$$
+where we use $t^\star$ instead of $z^\star$ because $n < 30$. Thus,
+
+$$
+\text{ME} = t^\star \cdot \text{SE} = t^\star \cdot 0.003296.
+$$
+```{r}
+qt(p = 0.93 + 0.07/2, df = 25 - 1, lower.tail = TRUE)
+```
+
+$$
+\text{ME} = 1.896457 \cdot 0.003296 = 0.00625.
+$$
+
+## Problem 2: Conclusion (Test)
+
+We found a test statistic of -0.27306, so the p-value is (since the alternative
+is $\mu \neq 2.500$):
+```{r}
+pt(-0.27306, df = 25 - 1, lower.tail = TRUE) * 2
+```
+and thus we fail to reject the null, and conclude that we do not have evidence
+to conclude that the average weight of pennies is anything but 2.5000 g.
+
+## Problem 2: Conclusion (CI)
+
+Similarly, we can form the 93\% confidence interval, which is
+$$
+2.49910 \pm \text{ME} = 2.49910 \pm 0.00625
+$$
+which is
+```{r}
+2.49910 + c(-1, 1) * 0.00625
+```
+and thus the 93\% confidence interval for the true mean penny weight
+is (2.493, 2.505) g.
